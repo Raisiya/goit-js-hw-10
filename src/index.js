@@ -41,9 +41,12 @@ function renderHTML(country) {
     } else if (country.length === 1) {
         inputClear();
         renderCountryCard(country);
+        return;
         
-    } renderCountryList(country);
-        
+    } inputClear();
+    renderCountryList(country);
+    return;
+       
 };
  
 function renderCountryList(countriesArr) {
